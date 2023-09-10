@@ -1,5 +1,4 @@
 import "@/styles/globals.css"
-import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -10,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
   title: {
-    default: "LagandaAll",
+    default: siteConfig.name,
     template: `${siteConfig.name} - %s`,
   },
   description: siteConfig.description,
